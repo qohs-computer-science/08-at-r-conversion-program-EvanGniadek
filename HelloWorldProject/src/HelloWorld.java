@@ -14,7 +14,7 @@ class Main {
 			if(userIn == 1 ){
 				System.out.println("enter a decimal number");
 				int inD = input.nextInt();
-				System.out.println("the number is " + Main.dToB(inD));
+				System.out.println("the binary number is " + Main.dToB(inD));
 				System.out.println("press 1 to countinue");
 				int answer = input.nextInt();
 				cont = Main.keepOn(answer);
@@ -22,7 +22,7 @@ class Main {
 			} else if(userIn == 2){
 				System.out.println("enter a binary number");
 				String inB = input.next();
-				System.out.println("the number is " + Main.bToD(inB));
+				System.out.println("the decimal number is " + Main.bToD(inB));
 				System.out.println("press 1 to countinue");
 				int answer = input.nextInt();
 
