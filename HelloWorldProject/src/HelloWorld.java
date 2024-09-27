@@ -14,7 +14,7 @@ class Main {
 			if(userIn == 1 ){
 				System.out.println("enter a decimal number");
 				int inD = input.nextInt();
-				System.out.println("Peep " + Main.dToB(inD));
+				System.out.println("the number is " + Main.dToB(inD));
 				System.out.println("press 1 to countinue");
 				int answer = input.nextInt();
 				cont = Main.keepOn(answer);
@@ -22,7 +22,7 @@ class Main {
 			} else if(userIn == 2){
 				System.out.println("enter a binary number");
 				String inB = input.next();
-				System.out.println("Peep " + Main.bToD(inB));
+				System.out.println("the number is " + Main.bToD(inB));
 				System.out.println("press 1 to countinue");
 				int answer = input.nextInt();
 
@@ -40,7 +40,6 @@ class Main {
         String proBinary = "";
 		int remain = 0;
         while(decimal > 0){
-			System.out.println(proBinary);
 			remain = decimal%2;
 			proBinary = remain + proBinary;
 			decimal /=2;
@@ -58,7 +57,6 @@ class Main {
 	        n++;
 	        iBinary/= 10;
             }//while
-        System.out.println(decimal);
         return decimal;
             }//end of static int 
 	public static boolean keepOn(int given){
